@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+/* ========BASIC======== */
+html {
+    overflow-y:scroll;
+}
+
+body {
+    margin:0;
+    padding:0;
+    line-height:1.6;
+    letter-spacing:1px;
+    font-family:"Hiragino Kaku Gothic Pro",HiraKakuPro-W3,"ヒラギノ角ゴ Pro W3","メイリオ", Meiryo,"ＭＳ Ｐゴシック",verdana,sans-serif;
+    font-size:13px;
+    color:#000;
+}
+
+a {
+    color:#000;
+    text-decoration:none;
+}
+a:hover {
+    color:#917700;
+    text-decoration:underline;
+}
+
+h1,h2,h3,h4 {
+    margin:0;
+}
+
+h2 + h3 {
+    margin-top:20px;
+}
+
+h3 {
+    clear:both;
+    margin:50px 0 0 0;
+    font-size:18px;
+    font-weight:normal;
+    color:#917700;
+    line-height:1.8;
+    border-bottom:1px dotted #917700;
+}
+h3:first-child {
+    margin-top:0;
+}
+
+h3 + h4 {
+    margin-top:10px;
+}
+
+h4 {
+    color:#333;
+    font-weight:bold;
+    font-size:14px;
+    line-height:2.0;
+    border:0;
+    padding:10px;
+}
+
+p {
+    margin:0.5em 0 1em 0;
+    line-height:1.8;
+}
+
+ul {
+    margin:10px 0;
+    padding:0;
+}
+
+li {
+    padding:0;
+    margin:0 0 0 30px;
+}
+
+
+/* ========TEMPLATE LAYOUT======== */
+#container {
+    width:100%;
+    margin:0 auto;
+    background:#fff;
+}
+
+#header {
+    position:relative;
+    width:940px;
+    margin:0 auto;
+}
+
+#menu {
+    position:absolute;
+    right:15px;
+    top:35px;
+}
+
+#contents {
+    clear:both;
+    overflow:hidden;
+    width:940px;
+    padding:10px 0;
+    margin:0 auto;
+}
+
+#conL {
+    float:left;
+    width:300px;
+}
+
+#conR {
+    float:right;
+    width:600px;
+}
+
+#footer {
+    clear:both;
+    width:940px;
+    margin:0 auto;
+    font-style:normal;
+    font-size:11px;
+    color:#999;
+    line-height:3.0;
+    text-align:center;
+}
+
+/* ========HEADER CUSTOMIZE======== */
+#header h1 {
+    margin: 20px 0;
+    padding: 20px 15px;
+    font-size: 25px;
+    color: #612323;
+    background: #f4dddb;
+    box-shadow: 0px 0px 0px 5px #f4dddb;
+    border: dashed 2px white;
+}
+
+/* ========MENU CUSTOMIZE======== */
+#menu ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+#menu li {
+    overflow:hidden;
+    float:left;
+    margin:0;
+    padding:0 0 0 30px;
+}
+
+#menu li a {
+    display:block;
+    font-weight:bold;
+    color:#333;
+    outline:none;
+    text-decoration:none;
+}
+#menu li a:hover {
+    color:#333;
+    border-bottom:3px solid #917700;
+    text-decoration:none;
+}
+
+/* INFORMATION CUSTOMIZE */
+.information {
+    margin-bottom:20px;
+}
+
+.contents {
+    margin-top: 40px;
+}
+
+.notice {
+    padding: 5px;
+    margin: 5px;
+    border: double 5px #e09f9c;
+}
+
+/* SUBMENU CUSTOMIZE */
+.submenu h3 {
+    position:relative;
+    text-align:center;
+    margin:0;
+    padding:15px 0;
+    line-height:1.0;
+    color:#fff;
+    border:none;
+    background:#e19f9c;
+}
+.submenu h3:after {
+    content:'▼';
+    position:absolute;
+    bottom:-13px;
+    left:50%;
+    float:left;
+    color:#e19f9c;
+}
+
+.submenu ul {
+    margin:0 10px;
+    padding:0;
+}
+
+.submenu li {
+    margin:0;
+    padding:0 0 0 7px;
+    list-style:none;
+    border-bottom:1px dotted #ddd;
+    background:url("../images/bg_arrow.gif") no-repeat left 50%;
+}
+
+.submenu li a {
+    display:block;
+    padding:10px 0;
+    text-decoration:none;
+}
+
+.submenu p {
+    margin:10px;
+}
+
+/* BOX CUSTOMIZE */
+.box {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    background: #fef2f1;
+    border-left: solid 10px #e19f9c;
+}
+
+
+/* ========PAGRTOP CUSTOMIZE========= */
+#pageTop {
+    position:fixed;
+    right:20px;
+    bottom:20px;
+}
+
+#pageTop a {
+    display:block;
+    padding:30px 30px 30px 42px;
+    color:#fff;
+    font-size:11px;
+    text-decoration:none;
+    background:#e19f9c url("../images/bg_pagetop.gif") 30px 50% no-repeat;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+}
+#pageTop a:hover {
+    background:#d76964 url("../images/bg_pagetop.gif") 30px 50% no-repeat;
+}
